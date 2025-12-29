@@ -51,6 +51,10 @@ Since this project uses ES Modules, it requires a local HTTP server to run (brow
 *   **Mouse Drag**: Pick up and throw the Cat sprite.
 *   **Space**: Pause / Resume.
 
+## 🚀 Live Demo
+
+**Play Now**: [https://cyber-serpent-8bit.netlify.app](https://cyber-serpent-8bit.netlify.app)
+
 ## 📦 Deployment
 
 This is a static web application. It can be deployed instantly on Vercel, Netlify, or GitHub Pages.
