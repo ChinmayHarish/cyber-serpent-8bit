@@ -1,0 +1,51 @@
+export const CONSTANTS = {
+    MAX_METEORS: 3,
+    SPEED_INCREASE_PER_LEVEL: 0.12,
+    METEOR_COLORS: {
+        core: "#ff9d40",
+        outer: "#ffc180",
+        trail: "#ffb366",
+        flash: "#fff0e0"
+    },
+    COMBO_TIME_WINDOW: 3000,
+    SCREEN_SHAKE_INTENSITY: 16,
+    SCREEN_SHAKE_DURATION: 0.9,
+    CAT_THROW_INTERVAL_MIN: 5000,
+    CAT_THROW_INTERVAL_MAX: 10000,
+    PIXEL_ART_SIZE: 32
+};
+
+export const STORY_FRAGMENTS = [
+    "In the digital realm of Webflow-powered creation,",
+    "two visionary tools emerged: Webflow and GSAP.",
+    "Webflow, the visual canvas that lets ideas flow straight from mind to screen,",
+    "and GSAP, the motion engine that breathes life into every pixel.",
+    "Together, they formed a perfect alliance,",
+    "empowering creators to build stunning interactive experiences.",
+    "This snake game represents the journey of a creative spirit,",
+    "collecting knowledge of both technologies along the way.",
+    "With each logo consumed, the snake grows stronger,",
+    "just as creatives grow with each new skill mastered.",
+    "The Webflow blue symbolizes limitless design freedom,",
+    "while GSAP green represents effortlessly smooth animation.",
+    "Meteors represent the challenges that creatives face,",
+    "obstacles that must be navigated with precision and skill.",
+    "As you guide the snake through the digital grid,",
+    "think of the countless creatives on similar journeys.",
+    "Learning to combine the power of GSAP's animations",
+    "with Webflow's intuitive design capabilities.",
+    "Strip every concept back to its essence,",
+    "letting each interaction breathe like a perfectly timed beat.",
+    "The pixel aesthetic reminds us of gaming's roots,",
+    "just as we should remember web creativity's foundations.",
+    "Each pixel is a building block, each movement a decision,",
+    "much like the code we write and the designs we craft.",
+    "The story of web creation is still being written,",
+    "by curious minds like yours, exploring new possibilities.",
+    "So continue your journey through this pixelated world,",
+    "collecting knowledge and growing stronger with each bite.",
+    "The GSAP and Webflow communities await your creations,",
+    "eager to see what you'll build with these powerful tools.",
+    "Will you master both technologies and create something amazing?",
+    "The choice, as always, is yours to make."
+];
