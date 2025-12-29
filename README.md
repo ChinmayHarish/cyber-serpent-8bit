@@ -53,7 +53,7 @@ Since this project uses ES Modules, it requires a local HTTP server to run (brow
 
 ## 🚀 Live Demo
 
-**Play Now**: [https://cyber-serpent-8bit.netlify.app](https://cyber-serpent-8bit.netlify.app)
+**Play Now**: [https://cyber-serpent-8bit.vercel.app](https://cyber-serpent-8bit.vercel.app)
 
 ## 📦 Deployment
 
