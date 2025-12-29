@@ -868,7 +868,37 @@ export class Game {
         });
 
         this.setupCatInteraction();
+        this.setupMobileControls();
     }
+
+    setupMobileControls() {
+        const buttons = {
+            up: document.getElementById("btn-up"),
+            down: document.getElementById("btn-down"),
+            left: document.getElementById("btn-left"),
+            right: document.getElementById("btn-right")
+        };
+
+        const handlePress = (dir, e) => {
+            if (e.cancelable) e.preventDefault();
+            this.state.nextDirection = dir;
+            // Visual Feedback
+            buttons[dir].style.background = "var(--accent-primary)";
+            buttons[dir].style.color = "var(--bg-color)";
+            setTimeout(() => {
+                buttons[dir].style.background = "rgba(0, 243, 255, 0.1)";
+                buttons[dir].style.color = "var(--accent-primary)";
+            }, 100);
+        };
+
+        for (const [dir, btn] of Object.entries(buttons)) {
+            if (btn) {
+                btn.addEventListener("touchstart", (e) => handlePress(dir, e), { passive: false });
+                btn.addEventListener("click", (e) => handlePress(dir, e)); // Fallback
+            }
+        }
+    }
+
     setupCatInteraction() {
         const cat = this.elements.catSprite;
         if (!cat) return;

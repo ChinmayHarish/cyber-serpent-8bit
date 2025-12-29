@@ -1095,3 +1095,70 @@ textarea {
         right: 10px;
     }
 }
+/* --- Mobile Controls --- */
+.mobile-controls-container {
+    display: none; /* Hidden on Desktop */
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 200; /* Above UI */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    pointer-events: auto;
+}
+
+.d-btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 243, 255, 0.1);
+    border: 2px solid var(--accent-primary);
+    border-radius: 12px;
+    color: var(--accent-primary);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    touch-action: manipulation; /* Prevent zoom */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.d-btn:active {
+    background: var(--accent-primary);
+    color: var(--bg-color);
+    transform: scale(0.95);
+}
+
+.d-row {
+    display: flex;
+    gap: 70px; /* Space between Left and Right */
+}
+
+/* Visibility for Touch Devices */
+@media (max-width: 1024px) {
+    .mobile-controls-container {
+        display: flex;
+    }
+    
+    /* Hide complex panels on mobile to clear view */
+    .data-panel, .control-panel, .terminal-panel {
+        display: none !important;
+    }
+
+    /* Minimal Header */
+    .header {
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+    
+    /* Ensure Canvas fits */
+    .game-canvas-container {
+        transform: translate(-50%, -60%); /* Shift up slightly for controls */
+    }
+}
