@@ -66,4 +66,4 @@ This is a static web application. It can be deployed instantly on Vercel, Netlif
 
 ## 👨‍💻 Author
 
-Refactored and Modernized by **Antigravity** & **Chinmay Harish**.
+RModernized by **Chinmay Harish**.
