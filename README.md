@@ -59,6 +59,11 @@ This is a static web application. It can be deployed instantly on Vercel, Netlif
 1.  Import this repository.
 2.  Deploy (No build command required).
 
+## 📖 Documentation
+
+*   [Development Log & Walkthrough](docs/DEVELOPMENT_LOG.md) - Detailed breakdown of architecture, changes, and debugging.
+
+
 ## 👨‍💻 Author
 
 Refactored and Modernized by **Antigravity** & **Chinmay Harish**.
