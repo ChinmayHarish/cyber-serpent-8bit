@@ -1097,16 +1097,17 @@ textarea {
 }
 
 /* --- Mobile Controls --- */
+/* --- Mobile Controls --- */
 .mobile-controls-container {
-    display: none;
-    /* Hidden on Desktop */
+    display: flex !important;
+    /* Force Display Always for Debugging */
     position: fixed;
-    bottom: 20vh;
-    /* Move up significantly */
+    bottom: 100px;
+    /* Safe Area */
     right: 50%;
     transform: translateX(50%);
-    z-index: 99999;
-    /* Force Top */
+    z-index: 200000;
+    /* Max Visibility */
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -1148,10 +1149,11 @@ textarea {
 }
 
 /* Visibility for Touch Devices */
+/* Visibility for Touch Devices */
 @media (max-width: 1024px) {
     .mobile-controls-container {
         display: flex !important;
-        /* Force Display */
+        /* Redundant but safe */
     }
 
     /* Hide complex panels on mobile to clear view */
