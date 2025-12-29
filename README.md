@@ -48,6 +48,7 @@ Since this project uses ES Modules, it requires a local HTTP server to run (brow
 ## 🎮 Controls
 
 *   **WASD / Arrow Keys**: Move Snake.
+*   **Touch Swipe**: Mobile Controls (Up/Down/Left/Right).
 *   **Mouse Drag**: Pick up and throw the Cat sprite.
 *   **Space**: Pause / Resume.
 
