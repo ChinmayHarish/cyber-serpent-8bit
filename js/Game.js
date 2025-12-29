@@ -824,6 +824,35 @@ export class Game {
             if (dirs[e.key]) this.state.nextDirection = dirs[e.key];
         });
 
+        // Touch Swipe Controls
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+        }, { passive: false });
+
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].screenX;
+            const touchEndY = e.changedTouches[0].screenY;
+
+            const dx = touchEndX - touchStartX;
+            const dy = touchEndY - touchStartY;
+
+            if (Math.abs(dx) > Math.abs(dy)) {
+                // Horizontal
+                if (Math.abs(dx) > 30) { // Threshold
+                    this.state.nextDirection = dx > 0 ? 'right' : 'left';
+                }
+            } else {
+                // Vertical
+                if (Math.abs(dy) > 30) {
+                    this.state.nextDirection = dy > 0 ? 'down' : 'up';
+                }
+            }
+        }, { passive: false });
+
         // Visibility
         document.addEventListener("visibilitychange", () => {
             if (!this.state.tabActive) {
